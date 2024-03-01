@@ -1,0 +1,532 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <aside class="sidebar">
+        <a href="javascript:void(0)" class="closeHambuger d-none">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+                <g filter="url(#filter0_b_2777_12704)">
+                    <circle cx="16" cy="16" r="16" fill="#8A8D99" />
+                </g>
+                <path d="M11.3359 11.334L20.6693 20.6673M11.3359 20.6673L20.6693 11.334" stroke="white" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round" />
+                <defs>
+                    <filter id="filter0_b_2777_12704" x="-4" y="-4" width="40" height="40" filterUnits="userSpaceOnUse"
+                        color-interpolation-filters="sRGB">
+                        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                        <feGaussianBlur in="BackgroundImageFix" stdDeviation="2" />
+                        <feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_2777_12704" />
+                        <feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_2777_12704"
+                            result="shape" />
+                    </filter>
+                </defs>
+            </svg>
+        </a>
+        <button class="rgi_primary_bright_bg_btn my-5 w-100" fdprocessedid="a6et8r">Sign In</button>
+        <nav class="sidebar__menu">
+            <ul aria-label="Site Pages" role="menubar">
+                <li class="parent" role="presentation">
+                    <a href="javascript:void(0)" role="menuitem" data-toggle="dropdown" aria-haspopup="true"
+                        aria-expanded="false">
+                        <span> Health Insurance</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
+                            <path d="M3.5 5.25L7 8.75L10.5 5.25" stroke="#151B32" stroke-width="1.2"
+                                stroke-linecap="round" stroke-linejoin="round"></path>
+                        </svg>
+                    </a>
+                    <ul role="menu" class="sidenav-dropdown">
+                        <!-- Replace the content of this list with your items -->
+                        <li role="presentation"><a role="menuitem">Item 1</a></li>
+                        <li role="presentation"><a role="menuitem">Item 2</a></li>
+                        <li role="presentation"><a role="menuitem">Item 3</a></li>
+                    </ul>
+                </li>
+                <li class="parent" role="presentation">
+                    <a href="javascript:void(0)" role="menuitem" data-toggle="dropdown" aria-haspopup="true"
+                        aria-expanded="false">
+                        <span> Car Insurance</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
+                            <path d="M3.5 5.25L7 8.75L10.5 5.25" stroke="#151B32" stroke-width="1.2"
+                                stroke-linecap="round" stroke-linejoin="round"></path>
+                        </svg>
+                    </a>
+                    <ul role="menu" class="sidenav-dropdown">
+                        <!-- Replace the content of this list with your items -->
+                        <li role="presentation"><a role="menuitem">Item 1</a></li>
+                        <li role="presentation"><a role="menuitem">Item 2</a></li>
+                        <li role="presentation"><a role="menuitem">Item 3</a></li>
+                    </ul>
+                </li>
+                <li class="parent" role="presentation">
+                    <a href="javascript:void(0)" role="menuitem" data-toggle="dropdown" aria-haspopup="true"
+                        aria-expanded="false">
+                        <span> Support</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
+                            <path d="M3.5 5.25L7 8.75L10.5 5.25" stroke="#151B32" stroke-width="1.2"
+                                stroke-linecap="round" stroke-linejoin="round"></path>
+                        </svg>
+                    </a>
+                    <ul role="menu" class="sidenav-dropdown">
+                        <!-- Replace the content of this list with your items -->
+                        <li role="presentation"><a role="menuitem">Item 1</a></li>
+                        <li role="presentation"><a role="menuitem">Item 2</a></li>
+                        <li role="presentation"><a role="menuitem">Item 3</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+
+
+    </aside>
+    <header>
+        <div class="rgi-header">
+            <div class="rgi-padding-x">
+                <div class="container-fluid">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div class="logo-hamburger">
+                            <a href="javascript:void(0)" id="openHambuger">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none">
+                                    <path d="M3 12H21M3 6H21M3 18H21" stroke="#151B32" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </a>
+                            <a class="navbar-brand" href="#">
+                                <img src="./assets/image 2.png" />
+                            </a>
+                        </div>
+                        <div class="top-menu d-none d-sm-none d-md-block">
+                            <ul>
+                                <li><a href="#" onclick="toggleDropdown('menu1')">Buy</a>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14"
+                                        fill="none">
+                                        <path d="M3.5 5.25L7 8.75L10.5 5.25" stroke="#151B32" stroke-width="1.2"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                    <div class="dropdown-content" id="menu1">
+                                        <div class="row">
+                                            <div class="col-6">
+                                                <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist"
+                                                    aria-orientation="vertical">
+                                                    <button class="nav-link active" id="v-pills-home-tab"
+                                                        data-toggle="pill" data-target="#v-pills-home" type="button"
+                                                        role="tab" aria-controls="v-pills-home"
+                                                        aria-selected="true">Health Insurance</button>
+                                                    <button class="nav-link" id="v-pills-profile-tab" data-toggle="pill"
+                                                        data-target="#v-pills-profile" type="button" role="tab"
+                                                        aria-controls="v-pills-profile" aria-selected="false">Car
+                                                        Insurance</button>
+                                                    <button class="nav-link" id="v-pills-messages-tab"
+                                                        data-toggle="pill" data-target="#v-pills-messages" type="button"
+                                                        role="tab" aria-controls="v-pills-messages"
+                                                        aria-selected="false">Two Wheeler Insurance</button>
+                                                    <button class="nav-link" id="v-pills-settings-tab"
+                                                        data-toggle="pill" data-target="#v-pills-settings" type="button"
+                                                        role="tab" aria-controls="v-pills-settings"
+                                                        aria-selected="false">Travel Insurance</button>
+                                                    <button class="nav-link" id="v-pills-settings-tab"
+                                                        data-toggle="pill" data-target="#v-pills-settings" type="button"
+                                                        role="tab" aria-controls="v-pills-settings"
+                                                        aria-selected="false">Other Insurances</button>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="tab-content" id="v-pills-tabContent">
+                                                    <div class="tab-pane fade show active" id="v-pills-home"
+                                                        role="tabpanel" aria-labelledby="v-pills-home-tab">
+                                                        <ul>
+                                                            <li>Health Insurance</li>
+                                                            <li>Car Insurance</li>
+                                                            <li>Bike Insurance </li>
+                                                            <li>Health Insurance</li>
+                                                            <li>Car Insurance</li>
+                                                            <li>Bike Insurance </li>
+                                                            <li>Health Insurance</li>
+                                                            <li>Car Insurance</li>
+                                                            <li>Bike Insurance </li>
+                                                            <li>Car Insurance</li>
+                                                            <li>Bike Insurance </li>
+                                                            <li>Health Insurance</li>
+                                                            <li>Car Insurance</li>
+                                                            <li>Bike Insurance </li>
+
+                                                        </ul>
+                                                    </div>
+                                                    <div class="tab-pane fade" id="v-pills-profile" role="tabpanel"
+                                                        aria-labelledby="v-pills-profile-tab">
+                                                        <ul>
+                                                            <li>Bike Insurance </li>
+                                                            <li>Health Insurance</li>
+
+                                                        </ul>
+                                                    </div>
+                                                    <div class="tab-pane fade" id="v-pills-messages" role="tabpanel"
+                                                        aria-labelledby="v-pills-messages-tab">
+                                                        <ul>
+                                                            <li>Super Top-up Insurance</li>
+                                                            <li>Health Gain Insurance</li>
+                                                            <li>Health Infinity Insurance </li>
+                                                            <li>Car Insurance</li>
+                                                            <li>Bike Insurance </li>
+                                                            <li>Health Insurance</li>
+                                                            <li>Car Insurance</li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="tab-pane fade" id="v-pills-settings" role="tabpanel"
+                                                        aria-labelledby="v-pills-settings-tab">
+                                                        <ul>
+                                                            <li>Health Global Insurance </li>
+                                                            <li>Bike Insurance</li>
+                                                            <li>Health Infinity Insurance </li>
+                                                            <li>Car Insurance</li>
+                                                            <li>Bike Insurance </li>
+                                                            <li>Health Insurance</li>
+                                                            <li>Car Insurance</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li><a href="#">Renew</a>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14"
+                                        fill="none">
+                                        <path d="M3.5 5.25L7 8.75L10.5 5.25" stroke="#151B32" stroke-width="1.2"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                </li>
+                                <li><a href="#">Claim</a>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14"
+                                        fill="none">
+                                        <path d="M3.5 5.25L7 8.75L10.5 5.25" stroke="#151B32" stroke-width="1.2"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                </li>
+                            </ul>
+                        </div>
+                        <span class="topchat-bot d-none d-sm-none d-md-block">
+                            <img alt="" class="img-fluid" data-lfr-editable-id="top-side-icon"
+                                data-lfr-editable-type="image" src="./assets/chat.png">
+
+                        </span>
+                        <div class="cart-language-support">
+                            <ul>
+                                <div class="search-bar d-none d-sm-none d-md-block">
+                                    <img src="./assets/search.png" alt="Left Icon" class="icon">
+                                    <input type="text" placeholder="I’m Brobot, your assistant" class="search-input">
+                                    <img src="./assets/mic.png" alt="Right Icon" class="icon">
+                                    <div class="fullscreen-search" id="fullscreenSearch">
+                                        <div class="search-container">
+                                            <div class="search-header">
+                                                <h2>Search Anything About Insurance</h2>
+                                                <div id="closeSearch"><img src="./assets/cross.png"></div>
+                                            </div>
+                                            <div class="content-search">
+                                                <div class="search-container">
+                                                    <input type="text" class="full-width-search with-icon">
+                                                </div>
+                                            </div>
+
+                                            <div class="tab-container">
+                                                <h3 class="search-tab-heading">Popular searches</h3>
+                                                <div class="tab-side">
+                                                    <div class="tab" data-tab="searchTab">Buy health insurance for
+                                                        myself</div>
+                                                    <div class="tab" data-tab="tab2">Network Hospitals near me</div>
+                                                    <div class="tab" data-tab="tab3">Knowledge centre</div>
+                                                    <div class="tab" data-tab="tab4">All products</div>
+                                                </div>
+
+                                                <div class="tab-content" id="searchTab">
+                                                    <!-- Content for Search Tab -->
+                                                    <p>This is the content of the Search Tab.</p>
+                                                </div>
+
+                                                <div class="tab-content" id="tab2">
+                                                    <!-- Content for Tab 2 -->
+                                                    <p>This is the content of Tab 2.</p>
+                                                </div>
+
+                                                <div class="tab-content" id="tab3">
+                                                    <!-- Content for Tab 3 -->
+                                                    <p>This is the content of Tab 3.</p>
+                                                </div>
+
+                                                <div class="tab-content" id="tab4">
+                                                    <!-- Content for Tab 4 -->
+                                                    <p>This is the content of Tab 4.</p>
+                                                </div>
+                                            </div>
+
+                                            <div class="tab-container">
+                                                <h3 class="accordion-heading">Quick Suggestions</h3>
+                                                <label class="accordion-wrapper">
+                                                    <input type="checkbox" class="accordion" hidden />
+                                                    <div class="title">
+                                                        <h3 class="inside-title">How much time it takes for cashless
+                                                            claim settlement</h3>
+                                                        <svg viewBox="0 0 256 512" width="12" title="angle-right"
+                                                            class="side-icon" fill="black">
+                                                            <path
+                                                                d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z" />
+                                                        </svg>
+                                                        <svg viewBox="0 0 320 512" height="24" title="angle-down"
+                                                            class="down-icon" fill="white">
+                                                            <path
+                                                                d="M143 352.3L7 216.3c-9.4-9.4-9.4-24.6 0-33.9l22.6-22.6c9.4-9.4 24.6-9.4 33.9 0l96.4 96.4 96.4-96.4c9.4-9.4 24.6-9.4 33.9 0l22.6 22.6c9.4 9.4 9.4 24.6 0 33.9l-136 136c-9.2 9.4-24.4 9.4-33.8 0z" />
+                                                        </svg>
+                                                    </div>
+                                                    <div class="content">
+                                                        <p>Content</p>
+                                                    </div>
+                                                </label>
+                                                <label class="accordion-wrapper">
+                                                    <input type="checkbox" class="accordion" hidden />
+                                                    <div class="title">
+                                                        <h3 class="inside-title">How much time it takes for cashless
+                                                            claim settlement</h3>
+                                                        <svg viewBox="0 0 256 512" width="12" title="angle-right"
+                                                            class="side-icon" fill="black">
+                                                            <path
+                                                                d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z" />
+                                                        </svg>
+                                                        <svg viewBox="0 0 320 512" height="24" title="angle-down"
+                                                            class="down-icon" fill="white">
+                                                            <path
+                                                                d="M143 352.3L7 216.3c-9.4-9.4-9.4-24.6 0-33.9l22.6-22.6c9.4-9.4 24.6-9.4 33.9 0l96.4 96.4 96.4-96.4c9.4-9.4 24.6-9.4 33.9 0l22.6 22.6c9.4 9.4 9.4 24.6 0 33.9l-136 136c-9.2 9.4-24.4 9.4-33.8 0z" />
+                                                        </svg>
+                                                    </div>
+                                                    <div class="content">
+                                                        <p>Content 2</p>
+                                                    </div>
+                                                </label>
+                                                <label class="accordion-wrapper">
+                                                    <input type="checkbox" class="accordion" hidden />
+                                                    <div class="title">
+                                                        <h3 class="inside-title">How much time it takes for cashless
+                                                            claim settlement</h3>
+                                                        <svg viewBox="0 0 256 512" width="12" title="angle-right"
+                                                            class="side-icon" fill="black">
+                                                            <path
+                                                                d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z" />
+                                                        </svg>
+                                                        <svg viewBox="0 0 320 512" height="24" title="angle-down"
+                                                            class="down-icon" fill="white">
+                                                            <path
+                                                                d="M143 352.3L7 216.3c-9.4-9.4-9.4-24.6 0-33.9l22.6-22.6c9.4-9.4 24.6-9.4 33.9 0l96.4 96.4 96.4-96.4c9.4-9.4 24.6-9.4 33.9 0l22.6 22.6c9.4 9.4 9.4 24.6 0 33.9l-136 136c-9.2 9.4-24.4 9.4-33.8 0z" />
+                                                        </svg>
+                                                    </div>
+                                                    <div class="content">
+                                                        <p>Content 3</p>
+                                                    </div>
+                                                </label>
+                                                <label class="accordion-wrapper">
+                                                    <input type="checkbox" class="accordion" hidden />
+                                                    <div class="title">
+                                                        <h3 class="inside-title">Travel insurance for visa approvals
+                                                        </h3>
+                                                        <svg viewBox="0 0 256 512" width="12" title="angle-right"
+                                                            class="side-icon" fill="black">
+                                                            <path
+                                                                d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z" />
+                                                        </svg>
+                                                        <svg viewBox="0 0 320 512" height="24" title="angle-down"
+                                                            class="down-icon" fill="black">
+                                                            <path
+                                                                d="M143 352.3L7 216.3c-9.4-9.4-9.4-24.6 0-33.9l22.6-22.6c9.4-9.4 24.6-9.4 33.9 0l96.4 96.4 96.4-96.4c9.4-9.4 24.6-9.4 33.9 0l22.6 22.6c9.4 9.4 9.4 24.6 0 33.9l-136 136c-9.2 9.4-24.4 9.4-33.8 0z" />
+                                                        </svg>
+                                                    </div>
+                                                    <div class="content">
+                                                        <p>Content 4</p>
+                                                    </div>
+                                                </label>
+                                                <span class="accordion-extend">View More</h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <li>
+                                    <div class="language-side" data-toggle="modal" data-target="#exampleModalLong">
+                                        <img alt="" class="img-fluid" data-lfr-editable-id="top-language-icon"
+                                            data-lfr-editable-type="image" src="./assets/Icon Button_Desktop.png">
+
+                                    </div>
+                                    <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog"
+                                        aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                                        <div class="modal-dialog" role="document">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <button type="button" class="close" data-dismiss="modal"
+                                                        aria-label="Close">
+                                                        <span aria-hidden="true">&times;</span>
+                                                    </button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <!-- Language selection container -->
+                                                    <div class="language-container">
+                                                        <div class="language-heading">Select Language:</div>
+
+                                                        <div class="language-option">
+                                                            <label for="english">English</label>
+                                                            <input type="radio" id="english" name="language"
+                                                                value="english">
+                                                        </div>
+
+                                                        <div class="language-option">
+                                                            <label for="hindi">हिंदी</label>
+                                                            <input type="radio" id="hindi" name="language"
+                                                                value="hindi">
+                                                        </div>
+
+                                                        <div class="language-option">
+                                                            <label for="marathi">मराठी</label>
+                                                            <input type="radio" id="marathi" name="language"
+                                                                value="marathi">
+                                                        </div>
+
+                                                        <div class="language-option">
+                                                            <label for="gujarati">ગુજરાતી</label>
+                                                            <input type="radio" id="gujarati" name="language"
+                                                                value="gujarati">
+                                                        </div>
+                                                    </div>
+                                                    <!-- End of language selection container -->
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button class="change-language-button">Change Language</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="cart-side">
+                                        <img alt="" class="img-fluid" data-lfr-editable-id="top-cart-icon"
+                                            data-lfr-editable-type="image" src="./assets/Icon Button_Desktop (1).png">
+                                    </div>
+                                <li>
+                                    <div class="support-nav d-none d-sm-none d-md-block">
+                                        <button class="support-button" id="supportBtn">
+                                            Support
+                                            <img src="./assets/dddwwww.png">
+                                        </button>
+                                        <div class="support-nav-content" id="supportDropdown">
+                                            <button class="rgi_primary_bright_bg_btn my-3 w-100"
+                                                fdprocessedid="a6et8r">Sign In</button>
+                                            <div class="support-inner-box">
+                                                <h3 class="support-h">
+                                                    Manage Policies
+                                                </h3>
+                                                <ul>
+                                                    <li>
+                                                        <img src="./assets/penn.png" alt="Icon">
+                                                        <h3 class="support-h">
+                                                            <a href="#">Subheading 1</a>
+                                                        </h3>
+                                                    </li>
+                                                    <li>
+                                                        <img src="./assets/penn.png" alt="Icon">
+                                                        <h3 class="support-h">
+                                                            <a href="#">Subheading 2</a>
+                                                        </h3>
+                                                    </li>
+                                                    <li>
+                                                        <img src="./assets/penn.png" alt="Icon">
+                                                        <h3 class="support-h">
+                                                            <a href="#">Subheading 3</a>
+                                                        </h3>
+                                                    </li>
+                                                    <li>
+                                                        <img src="./assets/penn.png" alt="Icon">
+                                                        <h3 class="support-h">
+                                                            <a href="#">Subheading 4</a>
+                                                        </h3>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="support-inner-box">
+                                                <h3 class="support-h">
+                                                    Manage Policies
+                                                </h3>
+                                                <ul>
+                                                    <li>
+                                                        <img src="./assets/penn.png" alt="Icon">
+                                                        <h3 class="support-h">
+                                                            <a href="#">Subheading 1</a>
+                                                        </h3>
+                                                    </li>
+                                                    <li>
+                                                        <img src="./assets/penn.png" alt="Icon">
+                                                        <h3 class="support-h">
+                                                            <a href="#">Subheading 2</a>
+                                                        </h3>
+                                                    </li>
+                                                    <li>
+                                                        <img src="./assets/penn.png" alt="Icon">
+                                                        <h3 class="support-h">
+                                                            <a href="#">Subheading 3</a>
+                                                        </h3>
+                                                    </li>
+                                                    <li>
+                                                        <img src="./assets/penn.png" alt="Icon">
+                                                        <h3 class="support-h">
+                                                            <a href="#">Subheading 4</a>
+                                                        </h3>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    
+
+    <footer class="mobile-footer d-sm-block d-md-none">
+        <nav class="bottom-nav-mobile">
+            <a href="#" class="nav-item-mobile">
+                <img src="./assets/hand.png" alt="Buy" class="nav-icon-mobile">
+                <span class="nav-text-mobile">Buy</span>
+            </a>
+            <a href="#" class="nav-item-mobile">
+                <img src="./assets/sheild.png" alt="Renew" class="nav-icon-mobile">
+                <span class="nav-text-mobile">Renew</span>
+            </a>
+            <a href="#" class="chat-bot-mobile">
+                <img src="./assets/chat.png" alt="Chat Bot">
+            </a>
+            <a href="#" class="nav-item-mobile">
+                <img src="./assets/callfooter.png" alt="Claim" class="nav-icon-mobile">
+                <span class="nav-text-mobile">Claim</span>
+            </a>
+            <a href="#" class="nav-item-mobile">
+                <img src="./assets/sheild.png" alt="Support" class="nav-icon-mobile">
+                <span class="nav-text-mobile">Support</span>
+            </a>
+        </nav>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+        crossorigin="anonymous"></script>
+    <script src="./js/index.js"></script>
+</body>
+
+</html>
