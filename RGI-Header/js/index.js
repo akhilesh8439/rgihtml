@@ -66,3 +66,30 @@ $(document).ready(function () {
         $('#' + tabId).show();
     });
 });
+$(document).ready(function() {
+    $('#buyFirst').click(function() {
+      $('.mobile-sidebar').toggleClass('toggle');
+    });
+  });
+
+  $('.mobile-parent').click(function() {
+    var dropdown = $(this).find('.downnav-dropdown');
+    dropdown.slideToggle();
+    $(this).find('a:first').toggleClass("active");
+});
+$(document).ready(function() {
+    $('.mobile-close-cross').click(function() {
+        $('.mobile-sidebar').toggleClass('toggle');
+    });
+});
+$(document).ready(function() {
+    // Hide the support nav initially
+    $('.support-nav-mobile').hide();
+
+    // Attach a click event handler to the supportLink
+    $('#supportLink').click(function(e) {
+        e.preventDefault(); // prevent the default behavior of the anchor tag
+        $('.support-nav-mobile').toggle(); // toggle visibility
+    });
+});
+

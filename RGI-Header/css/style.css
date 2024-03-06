@@ -102,6 +102,7 @@ ul {
   transition: transform 0.4s ease-in-out;
   color: #151b32;
   z-index: 9;
+  overflow: scroll;
 }
 
 .sidebar.toggle {
@@ -577,6 +578,260 @@ ul {
 .nav-text-mobile {
   font-size: 12px;
 }
+
+/* ---------------------- mobile bottom navigation------------------------------------- */
+.mobile-sidebar {
+  height: 550px;
+  width: 100%;
+  background: #ffffff;
+  box-shadow: 4px 4px 16px 0px #151b3214;
+  position: fixed;
+  bottom: 0; /* Adjusted positioning to the bottom */
+  left: 0;
+  padding: 40px 0px;
+  display: flex;
+  flex-direction: column;
+  transform: translateY(100%); /* Adjusted initial transform to be off-screen */
+  transition: transform 0.4s ease-in-out;
+  color: #151b32;
+  z-index: 9;
+
+}
+
+.mobile-sidebar.toggle {
+  transform: translateY(0); /* Adjusted transform for opening from bottom to top */
+}
+
+
+.mobile-sidebar .sidenav-dropdown {
+  display: none;
+}
+
+.mobile-sidebar ul li {
+  border-radius: 0px;
+  padding: 12px 16px;
+  margin: 15px 0;
+  border-bottom: 1px solid #e8e8eb;
+}
+
+.mobile-sidebar ul li ul li {
+  border: 0;
+  padding: 8px 12px 8px 12px;
+}
+
+.mobile-sidebar ul > .mobile-parent a.active {
+  background: #fff8ec;
+  padding: 12px 16px;
+  width: 100%;
+  display: block;
+  border-radius: 12px;
+}
+
+.mobilesidebar__menu li a {
+  color: #151b32;
+  text-decoration: none;
+  list-style: none;
+}
+.mobilesidebar__menu{
+  overflow: scroll;
+}
+.downnav-dropdown {
+  display: none;
+}
+.mobile-buy-icon{
+  display: flex;
+  justify-content: center;
+}
+.mobile-heading h4{
+  display: flex;
+  justify-content: center;
+}
+.mobile-close-cross{
+  position: absolute;
+  right: 50%;
+  top: -65px;
+
+}
+.mobile-support-icon{
+  display: flex;
+  justify-content: center;
+}
+/* ------------------------------------------------ support menu for mobile--------------------------------------- */
+
+.support-nav-mob {
+  position: relative;
+  display: inline-block;
+}
+
+.support-nav-mobile {
+  height: 892px;
+  width: 100%;
+  background: #ffffff;
+  box-shadow: 4px 4px 16px 0px #151b3214;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.4s ease-in-out;
+  color: #151b32;
+}
+.mobsupport-h {
+font-family: Barlow;
+font-size: 14px;
+font-weight: 600;
+line-height: 17px;
+letter-spacing: 0.03em;
+
+}
+.support-nav-mobile ul {
+  display: block;
+  padding-left: 0px;
+}
+.support-nav-mobile ul li {
+  padding-left: 0px;
+  text-decoration: none;
+  list-style: none;
+}
+.support-nav-mobile li {
+  display: flex;
+  padding: 5px;
+  align-items: center;
+}
+.support-inner-box {
+  padding: 16px;
+  border-radius: 16px;
+  box-shadow: 0px 0px 12px 0px #151b3214;
+  margin-bottom: 20px;
+}
+.mobile-support-icon{
+  display: flex;
+  justify-content: center;
+ 
+}
+.support-inner-box a{
+    text-decoration: none;
+    color: #000;
+}
+.mob-mainsupport-h{
+    color: #0C4DA2;
+font-family: Barlow;
+font-size: 14px;
+font-weight: 500;
+line-height: 17px;
+letter-spacing: 0.03em;
+}
+.small-search-bar {
+  display: flex;
+  align-items: center;
+  border: 1px solid #b9bbc2;
+  padding: 0px;
+  border-radius: 8px;
+  justify-content: space-between;
+  width: 100%;
+}
+.search-icons{
+  padding: 10px;
+}
+.mobile-search-input{
+    border: none;
+    padding: 0px;
+    font-size: 12px;
+}
+.inside-mobile-search{
+    display: flex;
+    justify-content: center;
+}
+.mobile-heading{
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid #E8E8EB;
+}
+.chat-mobile{
+    display: flex;
+    align-items: center;
+    padding: 16px;
+}
+
+.support-mob-button{
+  display: inline-block;
+  padding: 5px;
+  text-align: center;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+  font-weight: 600;
+  border: 1px solid transparent;
+  background: #ffbe3f;
+  color: #000;
+  width: 100%;
+}
+.mobile-support-button{
+   padding: 16px;
+}
+
+
+/* --------------------- Agent banner --------------------------------------------------------- */
+.agent-banner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.agent-icon-side {
+  margin-right: 10px;
+  /* Adjust the margin as per your requirement */
+}
+
+.text {
+  flex: 1;
+  /* Allow it to expand to fill the space between the icon and the button */
+  margin: 0 10px;
+  /* Add margins as required */
+}
+
+.agent-pic-button {
+  margin-left: 10px;
+  /* Adjust the margin as per your requirement */
+  display: flex;
+  align-items: center;
+  border: 1px solid #FFBE3F;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 14px;
+
+}
+
+.agent-pic-button img {
+  margin-right: 5px;
+  /* Adjust the margin as per your requirement */
+  max-width: 20px;
+  /* Set the maximum width of the image */
+  max-height: 20px;
+  /* Set the maximum height of the image */
+}
+
+.agent-banner {
+  background: #F2F7FC;
+
+}
+
+.agent-side-heading h2 {
+  font-family: Barlow;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 14px;
+  letter-spacing: 0.03em;
+
+}
+
+.agent-side-heading p {
+  font-family: Barlow;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 14px;
+  letter-spacing: 0.03em;
+
+}
+
+
 @media (max-width: 767px) {
   .rgi-padding-x{
     padding: 0px;
